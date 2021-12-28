@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1" charset="UTF-8">
+        <title>Compendium D&D 5ª edição</title>
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html">
+                    <img class="logo" src="images/logo.png">
+                </a>                
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hidemenu()"></i>
+                    <ul>
+                        <li><a href="">COMPENDIUM</a></li>
+                        <li><a href="">FICHAS</a></li>
+                        <li><a href="">MAPAS</a></li>
+                        <li><a href="">CONTATO</a></li>
+                        <li><a href="">SOBRE</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav>
+
+            <div class="text-box">
+                <h1>COMPENDIUM D&D 5ª EDIÇÃO</h1>
+                <p>Consulte tudo sobre Dungens and Dragons em português</p>
+                <a class="hero-btn">Botão Teste</a>
+               
+            </div>
+
+            <div class="footer">
+                <p href="https://dnd.wizards.com/">Todos os direitos reservador a © 1993-2021 Wizards of the Coast LLC, a subsidiary of Hasbro, Inc. All Rights Reserved.</p>
+            </div>   
+        </section>
+
+        <!-------------------JavaScrip------------------------>
+        <script>
+           var navLinks = document.getElementById("navLinks");
+           function showmenu(){
+               navLinks.style.right = "0";
+           } 
+           function hidemenu(){
+               navLinks.style.right = "-200px";
+           }
+        </script>
+    
+    </body>
+
+</html>
